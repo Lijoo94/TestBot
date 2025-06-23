@@ -1,4 +1,8 @@
 import discord
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 from discord.ext import commands
 
 
@@ -72,5 +76,5 @@ async def test(interaction: discord.Interaction):
 
 
 
-bot.run("MTM4NjYwNjI4MTQ0MzI0NjIwMw.G9cIux._DJpxfG1p0IQCKCl6v2ycp8yJ8nI6dTFgpv3VE")
+bot.run(os.getenv("DISCORD_TOKEN"))
 
